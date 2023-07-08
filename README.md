@@ -1,11 +1,11 @@
-About restrictedpython
-======================
+About restrictedpython-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/restrictedpython-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/zopefoundation/RestrictedPython
 
 Package license: ZPL-2.1
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/restrictedpython-feedstock/blob/main/LICENSE.txt)
 
 Summary: RestrictedPython is a defined subset of the Python language which allows to provide a program input into a trusted environment.
 
@@ -146,5 +146,6 @@ Feedstock Maintainers
 =====================
 
 * [@BubblyOrca](https://github.com/BubblyOrca/)
+* [@hadim](https://github.com/hadim/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 
