@@ -1,5 +1,5 @@
 {% set name = "restrictedpython" %}
-{% set version = "7.3" %}
+{% set version = "7.4" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/RestrictedPython-{{ version }}.tar.gz
-  sha256: 8888304c7858fdcfd86c50b58561797375ba40319d2b6ffb5d24b08b6a2dcd61
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 81b62924713dbd280917fceaecaf210fef7a49dddf1a08c8c214a3613fbeb425
 
 build:
   number: 0
