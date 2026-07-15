@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: restrictedpython
-  version: "8.1"
+  version: "8.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 4a69304aceacf6bee74bdf153c728221d4e3109b39acbfe00b3494927080d898
+  sha256: 68e463c22396fd94606043795ac7dbee05072725f38d0db7e1748da3f54fb274
 
 build:
   number: 0
