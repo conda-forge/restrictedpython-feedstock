@@ -18,18 +18,21 @@ build:
 
 requirements:
   host:
-    - python >=3.10,<3.16
+    - python ${{ python_min }}.*
     - setuptools >=78.1.1,<82
     - wheel
     - pip
   run:
-    - python >=3.10,<3.16
+    - python >=${{ python_min }}
 
 tests:
   - python:
       imports:
         - RestrictedPython
       pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: RestrictedPython is a defined subset of the Python language which allows to provide a program input into a trusted environment.
