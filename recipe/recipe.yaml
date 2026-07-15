@@ -1,19 +1,21 @@
-{% set name = "restrictedpython" %}
-{% set version = "8.1" %}
+schema_version: 1
 
+context:
+  name: restrictedpython
+  version: "8.1"
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 4a69304aceacf6bee74bdf153c728221d4e3109b39acbfe00b3494927080d898
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,22 +24,20 @@ requirements:
   run:
     - python >=3.7,<3.13
 
-test:
-  imports:
-    - RestrictedPython
-  commands:
-    - pip check
-  requires:
-    - pip
+tests:
+  - python:
+      imports:
+        - RestrictedPython
+      pip_check: true
 
 about:
-  home: https://github.com/zopefoundation/RestrictedPython
   summary: RestrictedPython is a defined subset of the Python language which allows to provide a program input into a trusted environment.
-  dev_url: https://github.com/zopefoundation/RestrictedPython
   license: ZPL-2.1
   license_file:
     - COPYRIGHT.txt
     - LICENSE.txt
+  homepage: https://github.com/zopefoundation/RestrictedPython
+  repository: https://github.com/zopefoundation/RestrictedPython
 
 extra:
   recipe-maintainers:
