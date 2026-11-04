@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "8.5"
+  version: "9.0"
 
 package:
   name: restrictedpython
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/restrictedpython/restrictedpython-${{ version }}.tar.gz
-  sha256: 4ed1269dbe3caa88db650d1af325198a952aeb1451eca05df0cfa65db4466215
+  sha256: 9e809cc073b9398f41084f1b801cf9a8c2a126feb0003b6af52fedeb2a3408e1
 
 build:
   number: 0
